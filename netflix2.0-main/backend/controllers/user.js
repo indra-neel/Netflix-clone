@@ -1,6 +1,6 @@
-import { User } from "../models/userModel.js";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
+import { User } from "../models/userModel.js";
 
 export const Login = async(req,res)=>{
     try {
@@ -75,7 +75,7 @@ export const Register = async (req,res) =>{
         });
 
         return res.status(201).json({
-            message:"Account created successfully.",
+            message:"Account Created Successfully.",
             success:true,
         })
 
